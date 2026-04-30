@@ -1,6 +1,11 @@
 ---
 name: telegram-miniapp-security-auditor
 description: Audit Telegram Mini App projects for launch safety before connecting bot tokens or public channels. Use when Codex needs to review a Telegram WebApp/Mini App, TMA frontend, FastAPI/Node backend, BotFather launch runbook, Colab/ngrok deployment, or OpenClaw/Codex skill that handles Telegram initData, bot tokens, admin endpoints, CORS, PII, request forms, or public channel launch readiness.
+version: 1.0.2
+homepage: https://github.com/zack-dev-cm/telegram-miniapp-security-auditor
+license: MIT-0
+user-invocable: true
+metadata: {"openclaw":{"homepage":"https://github.com/zack-dev-cm/telegram-miniapp-security-auditor","skillKey":"telegram-miniapp-security-auditor","requires":{"anyBins":["python3","python"]}}}
 ---
 
 # Telegram Mini App Security Auditor
@@ -12,7 +17,7 @@ Audit Telegram Mini Apps with a static, evidence-first workflow. Prefer the bund
 Run the static auditor from the skill folder:
 
 ```bash
-python3 /Users/zack/.codex/skills/telegram-miniapp-security-auditor/scripts/audit_tma.py \
+python3 {baseDir}/scripts/audit_tma.py \
   /path/to/project \
   --out-dir /tmp/tma-audit
 ```
